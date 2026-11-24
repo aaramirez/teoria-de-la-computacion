@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teoría de la computación</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Qué puede calcular una máquina y a qué costo: autómatas finitos y expresiones regulares, gramáticas y autómatas de pila, máquinas de Turing, indecidibilidad, P, NP, el teorema de Cook-Levin y la complejidad en espacio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Teoría de la <b>computación</b></a><span class="eyebrow">Curso visual e interactivo · Computación</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Computación</span>
+  <h1>Hay problemas que ninguna computadora resolverá jamás, y se puede demostrar</h1>
+  <p class="lede">Antes de que existieran las computadoras, Turing ya sabía qué no podrían hacer. Este curso sube por una escalera de máquinas, del autómata finito a la máquina de Turing, y en cada escalón pregunta qué puede reconocer y qué no. Termina en la pregunta abierta más famosa de la computación: si P es igual a NP. Cada máquina se dibuja y se ejecuta en la página, y las demostraciones importantes se hacen completas.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 13 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de computación y para quien quiera saber de dónde salen las expresiones regulares, los analizadores sintácticos y los límites de lo que se puede programar. Conviene manejar la inducción y los conjuntos (Matemáticas discretas y Elementos de la matemática) y haber visto el análisis de algoritmos con la notación O (Algoritmos).</p>
+    <p><b>Cómo está hecho.</b> Un puñado de lenguajes recorre el curso y marca cada escalón: los números binarios divisibles entre tres, los paréntesis balanceados, aⁿbⁿcⁿ y el problema de la parada. Para cada uno se pregunta cuál es la máquina más simple que lo reconoce. Los laboratorios son un editor de autómatas donde se dibujan estados y transiciones, un autómata de pila que muestra su pila y una máquina de Turing animada cinta en mano.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Lenguajes regulares</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-computar"><span class="n">01</span><b>Qué es computar: problemas como lenguajes</b><p>Alfabetos, cadenas y lenguajes; por qué cada problema de decisión es un lenguaje, y la escalera de máquinas del curso.</p></div>
+    <div class="mod soon" data-id="automatas-finitos"><span class="n">02</span><b>Autómatas finitos deterministas</b><p>La máquina de estados: definición formal, diseño de autómatas y las operaciones que conservan la regularidad.</p></div>
+    <div class="mod soon" data-id="no-determinismo"><span class="n">03</span><b>No determinismo y la construcción de subconjuntos</b><p>Autómatas que adivinan, por qué no ganan poder y cuánto cuesta quitarles la adivinanza.</p></div>
+    <div class="mod soon" data-id="expresiones-regulares"><span class="n">04</span><b>Expresiones regulares y el teorema de Kleene</b><p>Las expresiones regulares describen exactamente lo mismo que los autómatas finitos, y se pasa de una forma a la otra.</p></div>
+    <div class="mod soon" data-id="limites-de-lo-regular"><span class="n">05</span><b>Los límites de lo regular: bombeo y Myhill-Nerode</b><p>Demostrar que un lenguaje no es regular y encontrar el autómata mínimo que reconoce uno que sí lo es.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Lenguajes libres de contexto</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="gramaticas"><span class="n">06</span><b>Gramáticas libres de contexto</b><p>Reglas que generan lenguajes: derivaciones, árboles sintácticos, ambigüedad, la forma normal de Chomsky y CYK.</p></div>
+    <div class="mod soon" data-id="automatas-de-pila"><span class="n">07</span><b>Autómatas de pila y la jerarquía de Chomsky</b><p>Un autómata con una pila reconoce justo los lenguajes libres de contexto; más allá están los sensibles al contexto.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Computabilidad</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="maquinas-de-turing"><span class="n">08</span><b>Máquinas de Turing y la tesis de Church-Turing</b><p>Una cinta, un cabezal y una tabla de reglas bastan para cualquier cómputo; la máquina universal es la idea del programa almacenado.</p></div>
+    <div class="mod soon" data-id="indecidibilidad"><span class="n">09</span><b>Indecidibilidad y el problema de la parada</b><p>Decidible, reconocible y lo que está fuera de ambos: la demostración por diagonalización de que la parada es indecidible.</p></div>
+    <div class="mod soon" data-id="reducciones"><span class="n">10</span><b>Reducciones y el teorema de Rice</b><p>Transformar un problema en otro para heredar su indecidibilidad, y por qué casi toda pregunta sobre lo que hace un programa es indecidible.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Complejidad</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="p-y-np"><span class="n">11</span><b>Tiempo, P y NP</b><p>Las clases de complejidad en tiempo, la diferencia entre encontrar y verificar, y la pregunta del millón de dólares.</p></div>
+    <div class="mod soon" data-id="np-completitud"><span class="n">12</span><b>NP-completitud y el teorema de Cook-Levin</b><p>Reducciones polinomiales, la demostración completa de que SAT es NP-completo y la cadena de problemas que la siguen.</p></div>
+    <div class="mod soon" data-id="espacio-y-mas-alla"><span class="n">13</span><b>Complejidad en espacio y el mapa de las clases</b><p>PSPACE, el teorema de Savitch, L y NL, los teoremas de jerarquía y las clases del azar y lo cuántico.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/teoria-de-la-computacion" target="_blank" rel="noopener">github.com/aaramirez/teoria-de-la-computacion</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
